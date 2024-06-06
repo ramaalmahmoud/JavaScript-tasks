@@ -121,11 +121,11 @@ for(let i=0; i<arr1.length-1;i++){
 }
 
 // 3
-let pattern=' ';
+let pattern='';
 for(let i=1; i<=9;i++){
     for(let j=1;j<i;j++){
-        pattern+=' ';
-        pattern=pattern+j;
+     
+        pattern=pattern+j + " ";
     }
     pattern=pattern+' \n';
 }
@@ -149,6 +149,144 @@ function tellFortune(job,location,partnersName,numKids) {
 }
 tellFortune('software engineer', 'Jordan', 'Alice', 3);
 
+//2
+function calculateDogAge (x){
+    let age=x*7;
+    console.log("Your doggie is "+age+' '+"years old in dog years!")
+}
+calculateDogAge(5);
+
+// 3
+function calculateSupply (age,amount){
+    const maxAge=100;
+    let supply=(amount*356)*(maxAge-age)
+    console.log( 'You will need ' + supply + ' cups of tea to last you until the ripe old age of ' + maxAge);
+}
+calculateSupply(30, 3);
+
+//4
+function greet(name){ // parameter(variable)
+    console.log('Hello!'+name);
+}
+greet('Rama');
+
+//5
+function double(x) {
+    return 2 * x;
+  } // the parameter must be the same that the function must duble it
 
 
+function double() {
+    return 2 * 7;
+  }// the parameter must be a variable or nothing not a number 
+
+
+  function double(x) {
+    return 2 * x;
+  }// the parameter must be a variable or nothing not a number  and no allow to make calculations at string
+
+
+//   6
+function double1(x1){
+    return 2 * x1 ;
+  }// the keyword in function syntax is 'function' and must close the parenthesis and return the double of the function parameter (x1) not x
+  
+
+  function double2(x){
+  return 2 * x;
+  }// space between function keyword and the name of function and must start the parenthesis and start the curly bracket
+
+  function  double3 (x){
+    return 2 * x;
+  }// the parameter is after the name of the function and close the curly bracket
+
+
+  //7
+  function cube (c){
+    return c*c*c;
+  }
+ console.log( cube(3));
+
+ //8
+ function multiply(n,m){
+    return n*m;
+ }
+ console.log( multiply(3,5));
+//9
+ function canIGetADrivingLicense (age){
+    if(age>=20)
+        return  "yes you can";
+    else{
+        let g=20-age
+    return "please come back after "+g+' '+"years to get one";
+    }
+
+
+ }
+ console.log( canIGetADrivingLicense(17));
+
+ //10 
+ function sameLength(s1,s2){
+    if (s1.length==s2.length){
+        return true;
+    }
+    else 
+    return false;
+ }
+ console.log( sameLength("tree","clue"));
+
+ //11
+ function largerNubmer(n1,n2){
+    if (n1>n2)
+        return n1;
+    else
+    return n2;
+    
+ }
+ let result=largerNubmer(3,8);
+ console.log(result);
+
+//  12
+function  smallerNubmer(n1,n2,n3){
+    if(n1<=n2 && n1<=n3){
+        return n1;
+    }
+    else if(n2<=n1 &&n2<=n3)
+        return n2;
+    else if(n3<=n1 &&n3<=n2)
+        return n3;
+    
+
+}
+let smallNum =smallerNubmer(5,3,3);
+console.log(smallNum);
+
+//13
+function shorterString(s1,s2,s3,s4,s5){
+    
+        if (s1.length<s2.length && s1.length<s3.length ){
+            if(s1.length<s4.length && s1.length<s5.length)
+                return s1;
+        }
+        else if (s2.length<s1.length&& s2.length<s3.length ){
+            if(s2.length<s4.length&& s2.length<s5.length)
+                return s2;
+        }
+        else if (s3.length<s1.length&& s3.length<s3.length ){
+            if(s3.length<s4.length&& s3.length<s5.length)
+                return s3;
+        }
+       else if (s4.length<s1.length&& s4.length<s3.length ){
+            if(s3.length<s4.length&& s3.length<s5.length)
+                return s4;
+        }
+        
+        else
+        return s5;
+    
+    
+    
+    
+}
+console.log(shorterString("air","tr","car","by","github"))
 

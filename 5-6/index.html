@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="d1" style="background-color: yellow; width:50% ; border: 1px solid black; text-align: center;" onmouseover="d()" onmouseleave="a()">
+Hello world!
+    </div>
+<br> <br> <hr>
+
+    <select name="" id="contry-select" onchange="changeImages()">
+        <option value="value" selected>select contry</option>
+        <option value="images\jordan.png">Jordan</option>
+       <option value="images\palastine.jpg">Palastine</option>
+
+
+    </select>
+    <img src="" id="img1" style="height:400px ;" alt="">
+    <br> <br> <hr>
+    <select id="input" class="input" onchange="changingFontStyle (this);">
+        <option value="Times New Roman" elected="selected">
+           Times New Roman
+        </option>
+        <option value="Arial">Arial</option>
+        <option value="fantasy">Fantasy</option>
+        <option value="cursive">cursive</option>
+     </select>
+     <select id="input" class="input" onchange="changingFontStyle (this);">
+        <option value="10px" elected="selected">
+           10px
+        </option>
+        <option value="20px">20px</option>
+        <option value="30px">30px</option>
+        <option value="40px">40px</option>
+     </select>
+     <input id="italicCheckbox" type="checkbox" class="italicCheckbox" />
+     <label id="label1">Italic</label>
+     <input id="boldCheckbox" type="checkbox" class="boldCheckbox" />
+     <label id="label1">Bold</label>
+     <input id="ulCheckbox" type="checkbox" class="ulCheckbox" />
+     <label id="label1">Underline</label>
+     
+     <br> <br>
+     <div  style="border: 1px solid black; height: 100px;">
+        <p  id="content">
+           The quick brown fox over the lazy dog
+        </p>
+     </div>
+
+     <br>
+
+     
+
+     
+    <script src="index.js"></script>
+    
+</body>
+</html>
