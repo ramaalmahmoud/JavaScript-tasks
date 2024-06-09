@@ -263,30 +263,175 @@ console.log(smallNum);
 
 //13
 function shorterString(s1,s2,s3,s4,s5){
-    
-        if (s1.length<s2.length && s1.length<s3.length ){
-            if(s1.length<s4.length && s1.length<s5.length)
-                return s1;
-        }
-        else if (s2.length<s1.length&& s2.length<s3.length ){
-            if(s2.length<s4.length&& s2.length<s5.length)
-                return s2;
-        }
-        else if (s3.length<s1.length&& s3.length<s3.length ){
-            if(s3.length<s4.length&& s3.length<s5.length)
-                return s3;
-        }
-       else if (s4.length<s1.length&& s4.length<s3.length ){
-            if(s3.length<s4.length&& s3.length<s5.length)
-                return s4;
-        }
+    let shortest = s1;
+       
+        if(s2.length<shortest.length)
+                shortest=s2; 
+                
+            
+          
         
-        else
-        return s5;
-    
-    
-    
-    
+        
+        else if(s3.length<shortest.length )
+                shortest=s3;
+
+            
+                
+        
+       else if (s4.length<shortest.length )
+            
+                shortest= s4;
+                
+        
+     else if (s5.length<shortest.length)
+            
+                shortest=s5;
+      
+        
+       
+     return shortest;  
 }
-console.log(shorterString("air","tr","car","by","github"))
+    
+       
+        
+
+    
+    
+    
+    
+
+console.log(shorterString("air","school","car","by","github"));
+
+
+// 14
+function longerString(s1,s2,s3,s4){
+    let strings=[s1,s2,s3,s4];
+    longest=strings[0];
+    for(let i in strings){
+        if(strings[i].length>longest.length)
+            longest=strings[i];
+    }
+    return longest;
+}
+
+console.log(longerString("air","school","car","github"))
+
+// 15
+
+function isEven(num){
+    if(num%2==0)
+        return true;
+    else
+    return false;
+}
+console.log(isEven(1));
+
+// 16
+function isOdd(num){
+    if(num%2!=0)
+        return true;
+    else
+    return false;
+}
+console.log(isOdd(1));
+
+// 17
+function positive(num){
+    if (num<0){
+        return -1*num;
+    }
+    else
+    return num;
+}
+console.log( positive(-5));
+console.log( positive(4));
+
+
+// 18
+function fullName(fname,lname){
+    console.log(fname+' '+lname);
+}
+fullName('Rama','Almahmoud');
+
+// 19
+function average(n1,n2,n3,n4,n5){
+    let numbers=[n1,n2,n3,n4,n5]
+    let aver=0;
+    let sum=0;
+    for(let i=0;i<5;i++)
+        sum+=numbers[i];
+
+    
+   return aver=sum/5;
+
+}
+console.log(average(5,7,9,3,5));
+
+
+// 20
+function randomNumber(){
+    
+        var num = Math.random();
+    console.log(num);
+}
+randomNumber();
+randomNumber();
+// 21
+function randomBetweenNumbers(num1,num2){
+   
+        var rnum = Math.random()*(num2-num1)+num1;
+console.log(rnum);
+}
+randomBetweenNumbers(1,8);
+randomBetweenNumbers(3,100);
+
+
+
+// 22
+function scoreInUniversty(score){
+    if (score>=95 && score<=100 )
+        return 'A';
+    else if(score>=85 && score<=94)
+        return 'B';
+    else if (score >=70 && score<=84)
+        return 'C';
+    else if(score>=50 && score<=69)
+        return 'D';
+    else if(score <=49)
+        return 'F';
+
+}
+console.log( scoreInUniversty(96));
+console.log( scoreInUniversty(3));
+
+// 23
+let c=0;
+function counter() {
+    
+    return ++c;
+  }
+ 
+  
+console.log(counter());
+console.log(counter());
+console.log(counter());
+
+// 24
+function resetCounter(){
+    
+ 
+  console.log(c+' and the counter is reset now');
+  c=0;
+  
+ 
+    
+ }
+// console.log(counter());
+resetCounter();
+
+ console.log(counter());
+console.log(counter());
+console.log(counter());
+
+
 
