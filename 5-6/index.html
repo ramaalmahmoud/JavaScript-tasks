@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="myCss.css">
 </head>
 <body>
     <div id="d1" style="background-color: yellow; width:50% ; border: 1px solid black; text-align: center;" onmouseover="d()" onmouseleave="a()">
@@ -51,6 +52,30 @@ Hello world!
      </div>
 
      <br>
+     <br> <br> <hr>
+    <div id="d2" >
+
+    </div>
+    <br> <br> <hr>
+    <form action="" id="myform">
+    <label for="pass">Password (min 6 chaerecters)</label>
+    <input type="password" id="pass" class="pass">
+    <span class="error"></span>
+    <br> <br>
+     <label for="rpass">Repeat Password</label>
+     <input type="password" id="rpass" class="pass">
+     <span class="error"></span>
+     <br> <br>
+     <input type="submit" value="Submit" id="submitBtn"> 
+     
+   </form>
+   <br> <br> <hr>
+   <input type="text" id="song" placeholder="Song name">
+   <button id ="songBtn"> Add Song</button>
+   <div id="songs">
+      <p id="mySongs"></p>
+   </div>
+
 
      
 

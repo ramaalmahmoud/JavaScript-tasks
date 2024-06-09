@@ -19,30 +19,10 @@ var changingFontStyle = function (fontstyle) {
       }
 
 
-      
-// let b= document.getElementById("Bold");
-// b.addEventListener("click",changingBold);
-//  var changingBold =function (boldstyle){
-//     var a=document.getElementById("content");
-//     
-//     if(b.changingBold){
-//         a.style.fontWeight=boldstyle.value;
-//     }
-//     else{
-//         a.style.fontWeight=boldstyle.value;}
-//     }
+ 
 
-    // var changingBoldStyle = function (fontstyle) {
-        
-    //     document.getElementById("content").style.fontWeight = true;
-    //    // document.getElementById("content").style.fontWeight = fontstyle.value;
-       
-       
-    //  }
-
-
-     var btnBold = document.getElementById("boldCheckbox"),
-    title   = document.querySelector("#imagewrap h3");
+     var btnBold = document.getElementById("boldCheckbox");
+    
 
 btnBold.addEventListener("change", function(){
     
@@ -61,3 +41,53 @@ btnUl.addEventListener("change", function(){
 
     document.getElementById("content").style.textDecoration = this.checked ? "underline" : "none";
     });
+
+
+
+var box=document.getElementById('d2');
+box.style.backgroundColor ='blue';
+box.addEventListener('click', function onClick(){
+   box.style.backgroundColor ='red';
+});
+ 
+document.getElementById("myform").addEventListener("change", function(event) {
+    event.preventDefault();
+    var pass=document.getElementById('pass').value;
+    var rpass=document.getElementById('rpass').value;
+    var isValid = true; 
+    var limit = 6; 
+    if(pass.length<limit){
+         document.getElementsByClassName('error')[0].textContent ='Error:Password must be at least 6characters';
+    isValid = false;
+    
+    }
+    else if(pass!=rpass){
+        document.getElementsByClassName('error')[1].textContent ="Error:The tow passwords don't match";
+        isValid = false;
+    }
+
+   
+     else if(isValid==true){
+        document.getElementById('submitBtn').style.visibility='visible';
+    }
+    
+  
+});
+let song=document.getElementById('song');
+let songBtn=document.getElementById('songBtn');
+let mySongs=document.getElementById('mySongs');
+
+songBtn.addEventListener('click',function(event){
+  
+    mySongs.innerHTML+=song.value+ ' <br />';
+    
+    
+    
+    
+    
+    
+    
+});
+
+
+

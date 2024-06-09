@@ -1,0 +1,41 @@
+#d2{
+  
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    padding: 50px;
+    margin: 20px;}
+
+form{
+   
+    
+
+   
+width: 20%;
+  
+}
+    
+.pass{
+    
+    position: relative;
+    bottom: 30px;
+   
+    margin-left: 200px;
+}
+.error{
+    color: red;
+    position: relative;
+    bottom: 60px;
+    left: 400px;
+   
+    
+
+}
+#submitBtn{
+    visibility:hidden;
+}
+#songs p{
+    background-color: gainsboro;
+    border: 2px solid black;
+    border-radius: 10px;
+}
