@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11-6</title>
+</head>
+<body>
+<select name="" id="change" onchange="changeImages()">
+    
+</select>
+<img src="" id="img1" style="height:400px ;width: 400px; display: block;" alt="" >
+<br> <br> <hr>
+<section>
+    <form action="" onchange="savedata()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" >
+        
+        <br>
+        <label for="age">Age:</label>
+        <input type="text" id="age">
+        
+        <br>
+
+        <label for="gender">Gender: :</label>
+        <input type="text" id="gender">
+        <br>
+        <label for="date">Birth Date:</label>
+        <input type="date" id="date">
+        
+        <br>
+        <label for="img">Your Image:</label>
+        <input type="text" id="img">
+        
+
+    </form>
+</section>
+<div id="div" style="border: 1px black; width: 50%;">
+    <h2>Saved Data:</h2> 
+    <div id="savedData"></div>
+</div>
+<section>
+    <hr>
+    <form action="">
+        <label for="dec">Description:</label>
+        <input type="text" id="dec" onchange="savedata();">
+        
+       
+        
+        <br> 
+
+        <label for="mj-un">Major and university :</label>
+        <input type="text" id="mj-un">
+        <br>
+        <label for="">Programming Languges:</label>
+        <label for="html" >HTML</label>
+        <input type="checkbox" id="html" onchange="ch();" value="HTML">
+        <label for="css">CSS</label>
+        
+        <input type="checkbox" id="css">
+        <label for="js">JS</label>
+
+        <input type="checkbox" id="js">
+        
+
+    </form>
+</section>
+<div id="div1" style="border: 1px black; width: 50%;">
+    <h2>Saved Data:</h2> 
+    <div id="savedData1"></div>
+<br> <br> <br> <hr>
+<section>
+
+    <label for="sib">Number of your siblings:</label>
+        <input type="text" id="sib" oninput="savedata();">
+        <br> <br>
+        <label for="dis">Discription of siblings:</label>
+        <input type="text" id="dis"  oninput="savedata();">
+        
+    </section>
+    <div id="div2" style="border: 1px black; width: 50%;">
+        <h2>Saved Data:</h2> 
+        <div id="savedData1"></div>
+
+    <br> <br> <hr>
+    <button type="submit"> submit</button>
+    <br> <br> <hr>
+
+<form action="">
+    <label for="name">Name:</label>
+    <input type="text" id="name"  oninput="validateName();" >
+    <span id="error1" style="color: red; " "></span>
+    
+    <br> <br>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" oninput="validatelName();">
+    <span id="error2" style="color: red; " "></span>
+    
+    <br> <br>
+
+    
+    <label for="date">Birth Date:</label>
+    <input type="text" id="date" onchange="bdate();">
+    <span id="error3" style="color: red; " "></span>
+    
+    <br> <br>
+
+    <label for="email">Email: :</label>
+    <input type="email" id="email" oninput="validateEmail()">
+    <span id="error4" style="color: red; " "></span>
+    <br> <br>
+    <label for="cemail">Confirm Email: :</label>
+    <input type="email" id="cemail">
+    <br> <br>
+    <label for="pass">Password:</label>
+    <input type="password" id="pass"> 
+    <br> <br>
+    <label for="cpass">Confirm Password:</label>
+    <input type="password" id="cpass"> 
+    <br>
+</form>
+</section>
+
+
+    <script src="index.js"></script>
+
+</body>
+</html>
